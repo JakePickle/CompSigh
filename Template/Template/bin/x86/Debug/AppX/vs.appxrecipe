@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>36BF4A8CE484237BD6E08777814326801E08AC7AE935F3F9FB6412C58266DA19</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>3B60D319DAEE5D79B172419366AF040496C667DCD1C5C16B28A6AA659C9B2AD8</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b_1.0.0.0_x86__skteh6x2n86q6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b_skteh6x2n86q6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-12T07:18:08.180</Modified>
+      <Modified>2015-09-12T09:13:51.337</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -32,11 +32,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2015-06-05T03:32:06.000</Modified>
+      <Modified>2015-09-12T09:06:24.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-06-05T03:32:06.000</Modified>
+      <Modified>2015-09-12T09:05:37.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
@@ -48,11 +48,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2015-06-05T03:32:06.000</Modified>
+      <Modified>2015-09-12T09:06:46.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2015-06-05T03:32:06.000</Modified>
+      <Modified>2015-09-12T09:06:35.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\entrypoint\Template.exe">
       <PackagePath>entrypoint\Template.exe</PackagePath>
-      <Modified>2015-09-12T07:18:06.001</Modified>
+      <Modified>2015-09-12T09:13:47.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -96,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-12T07:18:06.865</Modified>
+      <Modified>2015-09-12T09:13:48.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -496,7 +496,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.exe">
       <PackagePath>Template.exe</PackagePath>
-      <Modified>2015-09-12T07:18:08.177</Modified>
+      <Modified>2015-09-12T09:13:51.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.xr.xml">
       <PackagePath>Template.xr.xml</PackagePath>
