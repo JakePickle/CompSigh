@@ -41,7 +41,7 @@
             <SplitView.Pane>
                 <RelativePanel Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
                     <StackPanel x:ConnectionId='9' x:Name="HeaderPanel" Orientation="Horizontal">
-                        <TextBlock x:ConnectionId='13' x:Name="Header" Text="Seth Kitchen" Style="{StaticResource TagLineTextStyle}" Margin="0,15,0,0" />
+                        <TextBlock x:ConnectionId='13' x:Name="Header" Text="Court Feedback System" Style="{StaticResource TagLineTextStyle}" Margin="0,15,0,0" />
                     </StackPanel>
                     <TextBlock x:ConnectionId='10' x:Name="SampleTitle" Text="Sample Title Here" Style="{StaticResource SampleHeaderTextStyle}" TextWrapping="Wrap" RelativePanel.Below="HeaderPanel" Margin="0,10,0,0"/>
                     <ListBox x:ConnectionId='11' x:Name="ScenarioControl"                                                    
@@ -58,43 +58,6 @@
                 </RelativePanel>
             </SplitView.Pane>
             <StackPanel>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Grid Grid.Row="0" Grid.Column="0" Width="300">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="60" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock x:ConnectionId='16' x:Name="lMake" Style="{StaticResource BasicTextStyle}" Text=" Make" Grid.Row="0" Grid.Column="0" />
-                        <TextBlock x:ConnectionId='17' x:Name="tMake" Style="{StaticResource BasicTextStyle}" Text=""  Grid.Row="0" Grid.Column="1" />
-                        <TextBlock x:ConnectionId='18' x:Name="lModel" Style="{StaticResource BasicTextStyle}" Text=" Model " Grid.Row="1" Grid.Column="0" />
-                        <TextBlock x:ConnectionId='19' x:Name="tModel" Style="{StaticResource BasicTextStyle}" Text="" Grid.Row="1" Grid.Column="1"/>
-                        <TextBlock x:ConnectionId='20' x:Name="lYear" Style="{StaticResource BasicTextStyle}" Text=" Year" Grid.Row="2" Grid.Column="0" />
-                        <TextBlock x:ConnectionId='21' x:Name="tYear" Style="{StaticResource BasicTextStyle}" Text="" Grid.Row="2" Grid.Column="1"/>
-                    </Grid>
-                    <Grid Grid.Row="0" Grid.Column="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Switch to Alphabetical view" />
-                        <ToggleButton x:ConnectionId='15' Grid.Row="1" Grid.Column="0" x:Name="alphabetical" Margin="83,22,0,-22" />
-                    </Grid>
-                </Grid>
                 <Frame x:ConnectionId='14' x:Name="ScenarioFrame" Margin="0,5,0,0" RelativePanel.AlignTopWithPanel="True"/>
             </StackPanel>
         </SplitView>

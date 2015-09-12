@@ -6,7 +6,82 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel>
-        <TextBlock TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Left" Text="Yo this is some example text:"/>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" TextWrapping="Wrap" Style="{StaticResource BasicTextStyle}" HorizontalAlignment="Center" Text="Please provide the following:" FontSize="40"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="Ticket #:" FontSize="40" Margin="-50,0,0,0"/>
+            <TextBox x:Name="tickNumber" Margin="90,-30,0,0" HorizontalAlignment="Right" MaxLength="20" Height="40" FontSize="20" Width="300"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="First Name:" FontSize="40" Margin="-50,0,0,0"/>
+            <TextBox x:Name="firstNameText" Margin="40,-30,0,0" HorizontalAlignment="Right" MaxLength="20" Height="40" FontSize="20" Width="300"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="Last Name:" FontSize="40" Margin="-50,0,0,0"/>
+            <TextBox x:Name="lastNameText" Margin="45,-30,5,0" HorizontalAlignment="Right" MaxLength="20" Height="40" FontSize="20" Width="300"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="Age Group:" FontSize="40"/>
+            <ComboBox x:Name="cmbAgeGroup" Margin="40,15,50,0" HorizontalAlignment="Right" Height="40" FontSize="20" Width="300">
+                <ComboBoxItem>Under 18</ComboBoxItem>
+                <ComboBoxItem>18-25</ComboBoxItem>
+                <ComboBoxItem>26-35</ComboBoxItem>
+                <ComboBoxItem>36-45</ComboBoxItem>
+                <ComboBoxItem>46-55</ComboBoxItem>
+                <ComboBoxItem>56-65</ComboBoxItem>
+                <ComboBoxItem>Over 65</ComboBoxItem>
+                <ComboBoxItem>Prefer not to respond</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="Ethnicity:" FontSize="40" Margin="0,0"/>
+            <ComboBox x:Name="cmbRaceGroup" Margin="80,15,50,0" Height="40" HorizontalAlignment="Right" FontSize="20" Width="300">
+                <ComboBoxItem>White</ComboBoxItem>
+                <ComboBoxItem>African American</ComboBoxItem>
+                <ComboBoxItem>Asian</ComboBoxItem>
+                <ComboBoxItem>Hispanic</ComboBoxItem>
+                <ComboBoxItem>Pacific Islander</ComboBoxItem>
+                <ComboBoxItem>Native American</ComboBoxItem>
+                <ComboBoxItem>Other</ComboBoxItem>
+                <ComboBoxItem>Prefer not to respond</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="Income:" FontSize="40"/>
+            <ComboBox x:Name="cmbIncomeGroup" Margin="95,10,50,0" Height="40" HorizontalAlignment="Right" FontSize="20" Width="300">
+                <ComboBoxItem>Under $25,000</ComboBoxItem>
+                <ComboBoxItem>$25,000-49,999</ComboBoxItem>
+                <ComboBoxItem>$50,000-74,999</ComboBoxItem>
+                <ComboBoxItem>$75,000-100,000</ComboBoxItem>
+                <ComboBoxItem>Over $100,000</ComboBoxItem>
+                <ComboBoxItem>Prefer not to respond</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">
+            <TextBlock Text="The Judge was..." FontSize="40"/>
+            <ComboBox x:Name="cmbFairBox" Margin="20,10,115,0" Height="40" HorizontalAlignment="Right" FontSize="20" Width="300">
+                <ComboBoxItem>Completely Unfair</ComboBoxItem>
+                <ComboBoxItem>Unfair</ComboBoxItem>
+                <ComboBoxItem>Neutral</ComboBoxItem>
+                <ComboBoxItem>Fair</ComboBoxItem>
+                <ComboBoxItem>Completely Fair</ComboBoxItem>
+                <ComboBoxItem>Prefer not to respond</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <Button Grid.Row="8" Width="200" HorizontalAlignment="Center" Height="100" x:Name="submitBtn" Content="Submit" FontSize="50" Click="submitBtn_Click"/>
+    </Grid>
 </Page>

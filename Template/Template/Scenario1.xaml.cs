@@ -20,5 +20,10 @@ namespace Template
         {
             this.InitializeComponent();
         }
+
+        private void submitBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

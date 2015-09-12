@@ -14,7 +14,7 @@ namespace Template
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public const string FEATURE_NAME = "TEMPLATE";
+        public const string FEATURE_NAME = "Saint Louis County CourtHouse";
         public static MainPage Current;
         List<Scenario> scenarios = new List<Scenario>();
         List<Configuration> configs = new List<Configuration>();
@@ -23,7 +23,9 @@ namespace Template
         public MainPage()
         {
             this.InitializeComponent();
-            scenarios.Add(new Scenario() { Title = "EXAMPLE", ClassType = typeof(Scenario1) });
+            scenarios.Add(new Scenario() { Title = "Welcome!", ClassType = typeof(Welcome) });
+            scenarios.Add(new Scenario() { Title = "Data Entry ", ClassType = typeof(Scenario1) });
+            scenarios.Add(new Scenario() { Title = "Results", ClassType = typeof(Results) });
             //Public property that allows other classes to access/control this page.
             Current = this;
             SampleTitle.Text = FEATURE_NAME;

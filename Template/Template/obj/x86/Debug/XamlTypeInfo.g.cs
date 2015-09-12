@@ -132,7 +132,7 @@ namespace Template.Template_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[10];
+            _typeNameTable = new string[12];
             _typeNameTable[0] = "Template.ScenarioBindingConverter";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Template.MainPage";
@@ -142,9 +142,11 @@ namespace Template.Template_XamlTypeInfo
             _typeNameTable[6] = "Template.Scenario";
             _typeNameTable[7] = "String";
             _typeNameTable[8] = "System.Type";
-            _typeNameTable[9] = "Template.Scenario1";
+            _typeNameTable[9] = "Template.Results";
+            _typeNameTable[10] = "Template.Scenario1";
+            _typeNameTable[11] = "Template.Welcome";
 
-            _typeTable = new global::System.Type[10];
+            _typeTable = new global::System.Type[12];
             _typeTable[0] = typeof(global::Template.ScenarioBindingConverter);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Template.MainPage);
@@ -154,7 +156,9 @@ namespace Template.Template_XamlTypeInfo
             _typeTable[6] = typeof(global::Template.Scenario);
             _typeTable[7] = typeof(global::System.String);
             _typeTable[8] = typeof(global::System.Type);
-            _typeTable[9] = typeof(global::Template.Scenario1);
+            _typeTable[9] = typeof(global::Template.Results);
+            _typeTable[10] = typeof(global::Template.Scenario1);
+            _typeTable[11] = typeof(global::Template.Welcome);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -193,7 +197,9 @@ namespace Template.Template_XamlTypeInfo
         private object Activate_2_MainPage() { return new global::Template.MainPage(); }
         private object Activate_5_List() { return new global::System.Collections.Generic.List<global::Template.Scenario>(); }
         private object Activate_6_Scenario() { return new global::Template.Scenario(); }
-        private object Activate_9_Scenario1() { return new global::Template.Scenario1(); }
+        private object Activate_9_Results() { return new global::Template.Results(); }
+        private object Activate_10_Scenario1() { return new global::Template.Scenario1(); }
+        private object Activate_11_Welcome() { return new global::Template.Welcome(); }
         private void VectorAdd_5_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Template.Scenario>)instance;
@@ -265,9 +271,23 @@ namespace Template.Template_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Template.Scenario1
+            case 9:   //  Template.Results
                 userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Scenario1;
+                userType.Activator = Activate_9_Results;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Template.Scenario1
+                userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_Scenario1;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  Template.Welcome
+                userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_Welcome;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
