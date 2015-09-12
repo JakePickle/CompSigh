@@ -1,6 +1,7 @@
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.dll
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.pdb
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.pri
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\GoogleCharts.csprojResolveAssemblyReference.cache
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\GoogleCharts.dll
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\GoogleCharts.pdb
 C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\ResourceHandlingTask.state

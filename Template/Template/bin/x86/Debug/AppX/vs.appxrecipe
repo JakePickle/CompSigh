@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>3B60D319DAEE5D79B172419366AF040496C667DCD1C5C16B28A6AA659C9B2AD8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>DC17DFD970EE2C8381680D3E4351897788DAF3D2E817B09D54A25B894A470FC3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b_1.0.0.0_x86__skteh6x2n86q6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b_skteh6x2n86q6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fd4db51a-77cc-48f6-840a-ff1b1a0cdc4b</RegisteredPackageID>
@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-12T15:07:31.420</Modified>
+      <Modified>2015-09-12T20:44:48.207</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,15 +64,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\entrypoint\Template.exe">
       <PackagePath>entrypoint\Template.exe</PackagePath>
-      <Modified>2015-09-12T15:07:30.610</Modified>
+      <Modified>2015-09-12T20:03:08.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts.dll">
       <PackagePath>GoogleCharts.dll</PackagePath>
-      <Modified>2015-09-12T12:38:42.126</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleChartSharp.dll">
-      <PackagePath>GoogleChartSharp.dll</PackagePath>
-      <Modified>2007-12-16T23:49:50.000</Modified>
+      <Modified>2015-09-12T19:23:58.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts\Properties\GoogleCharts.rd.xml">
       <PackagePath>GoogleCharts\Properties\GoogleCharts.rd.xml</PackagePath>
@@ -108,7 +104,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-12T15:07:31.044</Modified>
+      <Modified>2015-09-12T20:44:47.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -508,7 +504,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.exe">
       <PackagePath>Template.exe</PackagePath>
-      <Modified>2015-09-12T15:07:31.418</Modified>
+      <Modified>2015-09-12T20:44:48.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.xr.xml">
       <PackagePath>Template.xr.xml</PackagePath>

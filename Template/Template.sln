@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C} = {DEB91362-F529-4C7A-8F0F-ECE591D2847C}
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A} = {C4708494-52D0-461B-A9B0-A2D0EF94C82A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCharts", "GoogleCharts\GoogleCharts.csproj", "{DEB91362-F529-4C7A-8F0F-ECE591D2847C}"
 EndProject

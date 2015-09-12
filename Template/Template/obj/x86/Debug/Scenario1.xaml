@@ -32,7 +32,7 @@
             <TextBox x:ConnectionId='8' x:Name="firstNameText" Margin="260,-30,-100,0" HorizontalAlignment="Right" MaxLength="20" Height="40" FontSize="20" Width="300"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0">
-            <TextBlock Text="Last Name:" FontSize="30" Margin="100,0,220,0"/>
+            <TextBlock Text="Last Name:" FontSize="30" Margin="98,0,220,0"/>
             <TextBox x:ConnectionId='7' x:Name="lastNameText" Margin="40,-30,60,0" HorizontalAlignment="Right" MaxLength="20" Height="40" FontSize="20" Width="300"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="50,0">

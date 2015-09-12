@@ -51,9 +51,6 @@
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts.dll">
       <PackagePath>GoogleCharts.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleChartSharp.dll">
-      <PackagePath>GoogleChartSharp.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts\Properties\GoogleCharts.rd.xml">
       <PackagePath>GoogleCharts\Properties\GoogleCharts.rd.xml</PackagePath>
     </AppxPackagedFile>

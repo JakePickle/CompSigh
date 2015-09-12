@@ -83,7 +83,7 @@ namespace Template
 
         public void changeToNextScenario()
         {
-            //  saveLastConfig();
+            saveLastConfig();
             for (int i = 0; i < scenarios.Count; i++)
             {
                 if (scenarios[i].Equals(ScenarioControl.SelectedItem as Scenario))
