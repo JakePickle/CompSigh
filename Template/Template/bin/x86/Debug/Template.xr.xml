@@ -128,6 +128,7 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Template.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image" />
     <RootType FullName="Template.Results" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Width" />

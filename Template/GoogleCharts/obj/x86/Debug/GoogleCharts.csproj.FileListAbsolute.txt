@@ -1,0 +1,17 @@
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.dll
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.pdb
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\bin\x86\Debug\GoogleCharts.pri
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\GoogleCharts.dll
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\GoogleCharts.pdb
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\ResourceHandlingTask.state
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\priconfig.xml
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\priconfig.xml.intermediate
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\layout.resfiles
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\layout.resfiles.intermediate
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\resources.resfiles
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\resources.resfiles.intermediate
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\pri.resfiles
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\pri.resfiles.intermediate
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\qualifiers.txt
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\qualifiers.txt.intermediate
+C:\Users\Seth\Documents\GitHub\CompSigh\Template\GoogleCharts\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

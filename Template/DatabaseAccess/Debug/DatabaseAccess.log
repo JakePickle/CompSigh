@@ -1,0 +1,26 @@
+﻿Build started 9/12/2015 11:00:19 AM.
+     1>Project "C:\Users\Seth\Documents\GitHub\CompSigh\Template\DatabaseAccess\DatabaseAccess.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\Seth\Documents\GitHub\CompSigh\Template\DatabaseAccess\ /I"Generated Files\\" /IDebug\ /ZI /nologo /W3 /WX- /sdl /MP /Od /Oy- /D CPPWIN32DLL_EXPORTS /D _WINDLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /D __WRL_NO_DEFAULT_LIB__ /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"pch.h" /Fp"Debug\DatabaseAccess.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\store\references\platform.winmd" /analyze- /errorReport:prompt pch.cpp
+         pch.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\Seth\Documents\GitHub\CompSigh\Template\DatabaseAccess\ /I"Generated Files\\" /IDebug\ /ZI /nologo /W3 /WX- /sdl /MP /Od /Oy- /D CPPWIN32DLL_EXPORTS /D _WINDLL /D _WINDLL /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /D __WRL_NO_DEFAULT_LIB__ /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"pch.h" /Fp"Debug\DatabaseAccess.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\store\references\platform.winmd" /analyze- /errorReport:prompt dllmain.cpp DatabaseAccess.cpp testAlgorithm.cpp
+         dllmain.cpp
+         DatabaseAccess.cpp
+         testAlgorithm.cpp
+     1>c:\users\seth\documents\github\compsigh\template\databaseaccess\testalgorithm.cpp(178): warning C4172: returning address of local variable or temporary: arr
+     1>c:\users\seth\documents\github\compsigh\template\databaseaccess\testalgorithm.cpp(96): warning C4172: returning address of local variable or temporary: arr
+     1>c:\users\seth\documents\github\compsigh\template\databaseaccess\testalgorithm.cpp(141): warning C4172: returning address of local variable or temporary: arr
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.dll" /INCREMENTAL /NOLOGO WindowsApp.lib /MANIFEST:NO /DEBUG:FASTLINK /PDB:"C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.winmd" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.lib" /MACHINE:X86 /DLL Debug\dllmain.obj
+         Debug\DatabaseAccess.obj
+         Debug\pch.obj
+         Debug\testAlgorithm.obj
+            Creating library C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.lib and object C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.exp
+         DatabaseAccess.vcxproj -> C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.dll
+       _GenerateProjectPriFileCore:
+         C:\Program Files (x86)\Windows Kits\10\bin\x64\MakePri.exe New -ProjectRoot C:\Users\Seth\Documents\GitHub\CompSigh\Template\DatabaseAccess\ -ConfigXml Debug\priconfig.xml -OutputFile C:\Users\Seth\Documents\GitHub\CompSigh\Template\Debug\DatabaseAccess\DatabaseAccess.pri -IndexName DatabaseAccess -Verbose -Overwrite  
+     1>Done Building Project "C:\Users\Seth\Documents\GitHub\CompSigh\Template\DatabaseAccess\DatabaseAccess.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.29

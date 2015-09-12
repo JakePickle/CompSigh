@@ -9,5 +9,12 @@
 
     <StackPanel>
         <TextBlock HorizontalAlignment="Center" FontSize="35">Thank You! Here are some overall results: </TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="pieImg" />
+            <Image x:Name="barImg" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="scatterImg" />
+        </StackPanel>
     </StackPanel>
 </Page>

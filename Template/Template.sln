@@ -5,16 +5,23 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template", "Template\Template.csproj", "{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleCharts", "GoogleCharts\GoogleCharts.csproj", "{DEB91362-F529-4C7A-8F0F-ECE591D2847C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DatabaseAccess", "DatabaseAccess\DatabaseAccess.vcxproj", "{C4708494-52D0-461B-A9B0-A2D0EF94C82A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM = Release|ARM
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|ARM.Build.0 = Debug|ARM
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -24,6 +31,7 @@ Global
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|x86.ActiveCfg = Debug|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|x86.Build.0 = Debug|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Debug|x86.Deploy.0 = Debug|x86
+		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|Any CPU.ActiveCfg = Release|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|ARM.ActiveCfg = Release|ARM
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|ARM.Build.0 = Release|ARM
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|ARM.Deploy.0 = Release|ARM
@@ -33,6 +41,36 @@ Global
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|x86.ActiveCfg = Release|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|x86.Build.0 = Release|x86
 		{C2FB2534-2B83-477F-9B74-5118CBE1BF7B}.Release|x86.Deploy.0 = Release|x86
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|ARM.Build.0 = Debug|ARM
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|x64.ActiveCfg = Debug|x64
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|x64.Build.0 = Debug|x64
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|x86.ActiveCfg = Debug|x86
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Debug|x86.Build.0 = Debug|x86
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|ARM.ActiveCfg = Release|ARM
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|ARM.Build.0 = Release|ARM
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|x64.ActiveCfg = Release|x64
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|x64.Build.0 = Release|x64
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|x86.ActiveCfg = Release|x86
+		{DEB91362-F529-4C7A-8F0F-ECE591D2847C}.Release|x86.Build.0 = Release|x86
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|ARM.Build.0 = Debug|ARM
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|x64.ActiveCfg = Debug|x64
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|x64.Build.0 = Debug|x64
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Debug|x86.Build.0 = Debug|Win32
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|ARM.ActiveCfg = Release|ARM
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|ARM.Build.0 = Release|ARM
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|x64.ActiveCfg = Release|x64
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|x64.Build.0 = Release|x64
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|x86.ActiveCfg = Release|Win32
+		{C4708494-52D0-461B-A9B0-A2D0EF94C82A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
