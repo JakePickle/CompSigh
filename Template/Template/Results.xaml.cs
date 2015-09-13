@@ -26,6 +26,19 @@ namespace Template
     public sealed partial class Results : Page
     {
         MainPage rootPage = MainPage.Current;
+        int[] fair = null;
+        int[] ethnic = null;
+        int[] age = null;
+        int[] income = null;
+        int[] wait = null;
+        int count = 0;
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+        int count4 = 0;
+        int count5 = 0;
+        int count6 = 0;
+        int count7 = 0;
 
         public Results()
         {
@@ -35,60 +48,278 @@ namespace Template
 
         public async void doTheGraphs()
         {
-            DoData doData = new DoData();
-            doData.doAges();
-            await Task.Delay(TimeSpan.FromSeconds(5));
-            doData.doEthnic();
-            await Task.Delay(TimeSpan.FromSeconds(5));
-            doData.doIncome();
-            await Task.Delay(TimeSpan.FromSeconds(5));
-            doData.doWait();
-            await Task.Delay(TimeSpan.FromSeconds(5));
-            doData.doFairness();
+            StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
+            var ageFile = await local.OpenStreamForReadAsync(@"Age.txt");
+
+            // Read the data.
+            using (StreamReader streamReader = new StreamReader(ageFile))
+            {
+                string line = "";
+                while (!streamReader.EndOfStream)
+                {
+                    line = streamReader.ReadLine();
+                    if (Int32.Parse(line[0] + "") == 0)
+                    {
+                        count++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 1)
+                    {
+                        count1++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 2)
+                    {
+                        count2++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 3)
+                    {
+                        count3++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 4)
+                    {
+                        count4++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 5)
+                    {
+                        count5++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 6)
+                    {
+                        count6++;
+                    }
+                    else
+                    {
+                        count7++;
+                    }
+                }
+            }
+            ageFile.Dispose();
+            age = new int[] { count, count1, count2, count3, count4, count5, count6, count7 };
+            count = count1 = count2 = count3 = count4 = count5 = count6 = count7 = 0;
+
+            var ethFile = await local.OpenStreamForReadAsync(@"Ethnic.txt");
+            // Read the data.
+            using (StreamReader streamReader = new StreamReader(ethFile))
+            {
+                string line = "";
+                while (!streamReader.EndOfStream)
+                {
+                    line = streamReader.ReadLine();
+                    if (Int32.Parse(line[0] + "") == 0)
+                    {
+                        count++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 1)
+                    {
+                        count1++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 2)
+                    {
+                        count2++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 3)
+                    {
+                        count3++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 4)
+                    {
+                        count4++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 5)
+                    {
+                        count5++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 6)
+                    {
+                        count6++;
+                    }
+                    else
+                    {
+                        count7++;
+                    }
+                }
+            }
+            ethFile.Dispose();
+            ethnic = new int[] { count, count1, count2, count3, count4, count5, count6, count7 };
+            count = count1 = count2 = count3 = count4 = count5 = count6 = count7 = 0;
+
+            var IncomeFile = await local.OpenStreamForReadAsync(@"Income.txt");
+            // Read the data.
+            using (StreamReader streamReader = new StreamReader(IncomeFile))
+            {
+                string line = "";
+                while (!streamReader.EndOfStream)
+                {
+                    line = streamReader.ReadLine();
+                    if (Int32.Parse(line[0] + "") == 0)
+                    {
+                        count++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 1)
+                    {
+                        count1++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 2)
+                    {
+                        count2++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 3)
+                    {
+                        count3++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 4)
+                    {
+                        count4++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 5)
+                    {
+                        count5++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 6)
+                    {
+                        count6++;
+                    }
+                    else
+                    {
+                        count7++;
+                    }
+                }
+            }
+            IncomeFile.Dispose();
+            income = new int[] { count, count1, count2, count3, count4, count5 };
+            count = count1 = count2 = count3 = count4 = count5 = count6 = count7 = 0;
+
+            var WaitFile = await local.OpenStreamForReadAsync(@"Wait.txt");
+            // Read the data.
+            using (StreamReader streamReader = new StreamReader(WaitFile))
+            {
+                string line = "";
+                while (!streamReader.EndOfStream)
+                {
+                    line = streamReader.ReadLine();
+                    if (Int32.Parse(line[0] + "") == 0)
+                    {
+                        count++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 1)
+                    {
+                        count1++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 2)
+                    {
+                        count2++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 3)
+                    {
+                        count3++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 4)
+                    {
+                        count4++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 5)
+                    {
+                        count5++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 6)
+                    {
+                        count6++;
+                    }
+                    else
+                    {
+                        count7++;
+                    }
+                }
+            }
+            WaitFile.Dispose();
+            wait = new int[] { count, count1, count2, count3, count4, count5 };
+            count = count1 = count2 = count3 = count4 = count5 = count6 = count7 = 0;
+
+            var FairnessFile = await local.OpenStreamForReadAsync(@"Fairness.txt");
+            // Read the data.
+            using (StreamReader streamReader = new StreamReader(FairnessFile))
+            {
+                string line = "";
+                while (!streamReader.EndOfStream)
+                {
+                    line = streamReader.ReadLine();
+                    if (Int32.Parse(line[0] + "") == 0)
+                    {
+                        count++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 1)
+                    {
+                        count1++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 2)
+                    {
+                        count2++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 3)
+                    {
+                        count3++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 4)
+                    {
+                        count4++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 5)
+                    {
+                        count5++;
+                    }
+                    else if (Int32.Parse(line[0] + "") == 6)
+                    {
+                        count6++;
+                    }
+                    else
+                    {
+                        count7++;
+                    }
+                }
+            }
+            FairnessFile.Dispose();
+            fair = new int[] { count, count1, count2, count3, count4, count5 };
+            count = count1 = count2 = count3 = count4 = count5 = count6 = count7 = 0;
             List<int[]> data = new List<int[]>();
-            createPiGraph("FairPie.png", "Community Opinion of Judge", 400, 200, doData.getFair(), new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, StatType.Fairness);
-            createPiGraph("EthnicPie.png", "Ethnic Diversity in Courts", 400, 200, doData.getEthnic(), new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Island", "Native American", "Other", "Prefer not to respond" }, StatType.Ethnicity);
-            createPiGraph("IncomePie.png", "Income Diversity in Courts", 400, 200, doData.getIncome(), new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, StatType.Income);
-            createPiGraph("WaitPie.png", "Wait Time in Courts", 400, 200, doData.getWait(), new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, StatType.Wait);
-            createPiGraph("AgePie.png", "Age Diversity in Courts", 400, 200, doData.getWait(), new string[] { "Under 18", "18-25", "26-35", "36-45", "46-55", "56-65", "Over 65", "Prefer not to respond" }, StatType.Age);
-            await Task.Delay(TimeSpan.FromSeconds(30));
-            data.Add(new int[] { doData.getEthnic()[0], 0, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, doData.getEthnic()[1], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, doData.getEthnic()[2], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, doData.getEthnic()[3], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, doData.getEthnic()[4], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getEthnic()[5], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getEthnic()[6] });
+            createPiGraph("FairPie.png", "Community Opinion of Judge", 400, 200, fair, new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, StatType.Fairness);
+            createPiGraph("EthnicPie.png", "Ethnic Diversity in Courts", 400, 200, ethnic, new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Island", "Native American", "Other", "Prefer not to respond" }, StatType.Ethnicity);
+            createPiGraph("IncomePie.png", "Income Diversity in Courts", 400, 200, income, new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, StatType.Income);
+            createPiGraph("WaitPie.png", "Wait Time in Courts", 400, 200,wait, new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, StatType.Wait);
+            createPiGraph("AgePie.png", "Age Diversity in Courts", 400, 200, age, new string[] { "Under 18", "18-25", "26-35", "36-45", "46-55", "56-65", "Over 65", "Prefer not to respond" }, StatType.Age);
+            data.Add(new int[] { ethnic[0], 0, 0, 0, 0, 0, 0,0 });
+            data.Add(new int[] { 0, ethnic[1], 0, 0, 0, 0, 0,0 });
+            data.Add(new int[] { 0, 0, ethnic[2], 0, 0, 0, 0,0 });
+            data.Add(new int[] { 0, 0, 0, ethnic[3], 0, 0, 0,0 });
+            data.Add(new int[] { 0, 0, 0, 0, ethnic[4], 0, 0,0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, ethnic[5], 0,0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, ethnic[6],0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, 0, ethnic[7] });
             createBarGraph("EthnicBar.png", "Number of Ethnicities", 400, 200, data, new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Islander", "Native American", "Other" }, BarChartOrientation.Vertical, StatType.Ethnicity);
             data = new List<int[]>();
             await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { doData.getFair()[0], 0, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, doData.getFair()[1], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, doData.getFair()[2], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, doData.getFair()[3], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, doData.getFair()[4], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getFair()[5], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getFair()[6] });
+            data.Add(new int[] { fair[0], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, fair[1], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, fair[2], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, fair[3], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, fair[4], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, fair[5] });
             createBarGraph("FairnessBar.png", "Opinions of Judge", 400, 200, data, new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Fairness);
             data = new List<int[]>();
             await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { doData.getIncome()[0], 0, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, doData.getIncome()[1], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, doData.getIncome()[2], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, doData.getIncome()[3], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, doData.getIncome()[4], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getIncome()[5], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getIncome()[6] });
+            data.Add(new int[] { income[0], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, income[1], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, income[2], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, income[3], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, income[4], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, income[5] });
             createBarGraph("IncomeBar.png", "Different Incomes in the Court", 400, 200, data, new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Income);
             data = new List<int[]>();
             await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { doData.getWait()[0], 0, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, doData.getWait()[1], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, doData.getWait()[2], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, doData.getWait()[3], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, doData.getWait()[4], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getWait()[5], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getWait()[6] });
+            data.Add(new int[] { wait[0], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, wait[1], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, wait[2], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, wait[3], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, wait[4], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, wait[5] });
             await Task.Delay(TimeSpan.FromSeconds(3));
             createBarGraph("WaitBar.png", "Wait times in Court", 400, 200, data, new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, BarChartOrientation.Vertical, StatType.Wait);
             data = new List<int[]>();
@@ -98,7 +329,7 @@ namespace Template
             StorageFolder folder = KnownFolders.PicturesLibrary;
             StorageFile file = await folder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
             string url = "";
-            PieChart chart = new PieChart(width, height, PieChartType.ThreeD);
+            PieChart chart = new PieChart(width, height, PieChartType.TwoD);
             chart.SetTitle(title);
             chart.SetPieChartLabels(labels);
             chart.SetData(data);
