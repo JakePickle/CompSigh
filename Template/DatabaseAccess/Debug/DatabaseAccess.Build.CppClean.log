@@ -2,9 +2,9 @@ c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseac
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\vc140.pdb
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\vc140.idb
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\pch.obj
-c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\testalgorithm.obj
-c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\dllmain.obj
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.obj
+c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\dllmain.obj
+c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\testalgorithm.obj
 c:\users\seth\documents\github\compsigh\template\debug\databaseaccess\databaseaccess.lib
 c:\users\seth\documents\github\compsigh\template\debug\databaseaccess\databaseaccess.exp
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\resourcehandlingtask.state
@@ -29,6 +29,9 @@ c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseac
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\cl.write.1.tlog
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\databaseaccess.read.1u.tlog
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\databaseaccess.write.1u.tlog
+c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.10588.delete.1.tlog
+c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.16876.delete.1.tlog
+c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.7768.delete.1.tlog
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.command.1.tlog
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.read.1.tlog
 c:\users\seth\documents\github\compsigh\template\databaseaccess\debug\databaseaccess.tlog\link.write.1.tlog

@@ -285,45 +285,8 @@ namespace Template
             createPiGraph("IncomePie.png", "Income Diversity in Courts", 400, 200, income, new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, StatType.Income);
             createPiGraph("WaitPie.png", "Wait Time in Courts", 400, 200,wait, new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, StatType.Wait);
             createPiGraph("AgePie.png", "Age Diversity in Courts", 400, 200, age, new string[] { "Under 18", "18-25", "26-35", "36-45", "46-55", "56-65", "Over 65", "Prefer not to respond" }, StatType.Age);
-            data.Add(new int[] { ethnic[0], 0, 0, 0, 0, 0, 0,0 });
-            data.Add(new int[] { 0, ethnic[1], 0, 0, 0, 0, 0,0 });
-            data.Add(new int[] { 0, 0, ethnic[2], 0, 0, 0, 0,0 });
-            data.Add(new int[] { 0, 0, 0, ethnic[3], 0, 0, 0,0 });
-            data.Add(new int[] { 0, 0, 0, 0, ethnic[4], 0, 0,0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, ethnic[5], 0,0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, ethnic[6],0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, 0, ethnic[7] });
-            createBarGraph("EthnicBar.png", "Number of Ethnicities", 400, 200, data, new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Islander", "Native American", "Other" }, BarChartOrientation.Vertical, StatType.Ethnicity);
-            data = new List<int[]>();
-            await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { fair[0], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, fair[1], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, fair[2], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, fair[3], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, fair[4], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, fair[5] });
-            createBarGraph("FairnessBar.png", "Opinions of Judge", 400, 200, data, new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Fairness);
-            data = new List<int[]>();
-            await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { income[0], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, income[1], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, income[2], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, income[3], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, income[4], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, income[5] });
-            createBarGraph("IncomeBar.png", "Different Incomes in the Court", 400, 200, data, new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Income);
-            data = new List<int[]>();
-            await Task.Delay(TimeSpan.FromSeconds(3));
-            data.Add(new int[] { wait[0], 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, wait[1], 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, wait[2], 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, wait[3], 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, wait[4], 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, wait[5] });
-            await Task.Delay(TimeSpan.FromSeconds(3));
-            createBarGraph("WaitBar.png", "Wait times in Court", 400, 200, data, new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, BarChartOrientation.Vertical, StatType.Wait);
-            data = new List<int[]>();
         }
+
         public async void createPiGraph(string fileName, string title, int width, int height, int[] data, string[] labels, StatType type)
         {
             StorageFolder folder = KnownFolders.PicturesLibrary;
@@ -346,6 +309,7 @@ namespace Template
                     await FileIO.WriteBufferAsync(file, lnByte.AsBuffer());
                 }
             }
+            await Task.Delay(TimeSpan.FromSeconds(2));
             using (IRandomAccessStream fileStream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
             {
                 // Set the image source to the selected bitmap 
@@ -447,59 +411,6 @@ namespace Template
             }
         }
 
-        public async void createBarGraph(string fileName, string title, int width, int height, List<int[]> data, string[] labels, BarChartOrientation overload, StatType type)
-        {
-            StorageFolder folder = KnownFolders.PicturesLibrary;
-            StorageFile file = await folder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
-            string url = "";
-            BarChart chart = new BarChart(width, height,overload,BarChartStyle.Stacked);
-            chart.SetTitle(title);
-            chart.SetLegend(labels);
-            chart.SetDatasetColors(new string[] { "FF0000", "00AA00", "E6E6FA", "333333", "32cd32", "00FF00", "740001" });
-            chart.AddAxis(new ChartAxis(ChartAxisType.Left));
-            chart.SetData(data);
-            chart.AddSolidFill(new SolidFill(ChartFillTarget.Background, @"00000000"));
-            url = chart.GetUrl();
-            HttpWebRequest lxRequest = (HttpWebRequest)WebRequest.Create(url);
-            // returned values are returned as a stream, then read into a string
-            String lsResponse = string.Empty;
-            using (var lxResponse = await lxRequest.GetResponseAsync())
-            {
-                using (BinaryReader reader = new BinaryReader(lxResponse.GetResponseStream()))
-                {
-                    byte[] lnByte = reader.ReadBytes(1 * 1024 * 1024 * 10);
-                    await FileIO.WriteBufferAsync(file, lnByte.AsBuffer());
-                }
-            }
-            using (IRandomAccessStream fileStream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read))
-            {
-                // Set the image source to the selected bitmap 
-                BitmapImage bitmapImage = new BitmapImage();
-                bitmapImage.DecodePixelWidth = width; //match the target Image.Width, not shown
-                bitmapImage.DecodePixelHeight = height;
-                await bitmapImage.SetSourceAsync(fileStream);
-                if (type == StatType.Age)
-                {
-                    barAge.Source = bitmapImage;
-                }
-                else if (type == StatType.Ethnicity)
-                {
-                    barEthnic.Source = bitmapImage;
-                }
-                else if (type == StatType.Fairness)
-                {
-                    barFair.Source = bitmapImage;
-                }
-                else if (type == StatType.Income)
-                {
-                    barIncome.Source = bitmapImage;
-                }
-                else
-                {
-                    barWait.Source = bitmapImage;
-                }
-                //barImg.Source = bitmapImage;
-            }
-        }
+      
     }
 }

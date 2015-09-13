@@ -10,10 +10,12 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DatabaseAccess.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="testAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DatabaseAccess.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="testAlgorithm.h" />
   </ItemGroup>
 </Project>

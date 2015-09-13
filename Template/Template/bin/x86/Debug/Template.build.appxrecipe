@@ -78,6 +78,9 @@
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\RestSharp.dll">
+      <PackagePath>RestSharp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
     </AppxPackagedFile>
@@ -380,6 +383,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.xr.xml">
       <PackagePath>Template.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Twilio.Api.dll">
+      <PackagePath>Twilio.Api.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

@@ -14,7 +14,7 @@ namespace Template
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public const string FEATURE_NAME = "Saint Louis County CourtHouse";
+        public const string FEATURE_NAME = "Saint Louis County Courthouse";
         public static MainPage Current;
         List<Scenario> scenarios = new List<Scenario>();
         List<Configuration> configs = new List<Configuration>();
@@ -25,11 +25,15 @@ namespace Template
             this.InitializeComponent();
             scenarios.Add(new Scenario() { Title = "Welcome!", ClassType = typeof(Welcome) });
             scenarios.Add(new Scenario() { Title = "Data Entry ", ClassType = typeof(Scenario1) });
-            scenarios.Add(new Scenario() { Title = "Results", ClassType = typeof(Results) });
+            scenarios.Add(new Scenario() { Title = "Pie Charts", ClassType = typeof(Results) });
+            scenarios.Add(new Scenario() { Title = "Bar Graphs", ClassType = typeof(Results2) });
+            scenarios.Add(new Scenario() { Title = "Ticket Upload and Email Service", ClassType = typeof(OcrFileImage)});
+            scenarios.Add(new Scenario() { Title = "Capture Ticket-Mobile Only", ClassType = typeof(OCRCapturedImage) });
             //Public property that allows other classes to access/control this page.
             Current = this;
             SampleTitle.Text = FEATURE_NAME;
         }
+
 
         //Used with Back button to keep track of all the user's old and current movements/settings
         public void saveLastConfig()

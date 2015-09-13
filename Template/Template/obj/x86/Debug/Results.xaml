@@ -8,34 +8,18 @@
     mc:Ignorable="d">
 
     <StackPanel>
-        <TextBlock HorizontalAlignment="Center" FontSize="35">Thank You! Here are some overall results: </TextBlock>
+        <TextBlock HorizontalAlignment="Center" FontSize="35">Thank You! Here are some Pie Chart Overall results: </TextBlock>
         <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='10' x:Name="pieAge" />
-            <Image x:ConnectionId='11' x:Name="pieEthnic" />
+            <Image x:ConnectionId='4' x:Name="pieAge" />
+            <Image x:ConnectionId='5' x:Name="pieEthnic" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='8' x:Name="pieIncome" />
-            <Image x:ConnectionId='9' x:Name="pieWait" />
+            <Image x:ConnectionId='2' x:Name="pieIncome" />
+            <Image x:ConnectionId='3' x:Name="pieWait" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='6' x:Name="pieFair" />
-            <Image x:ConnectionId='7' x:Name="barEthnic" />
+            <Image x:ConnectionId='1' x:Name="pieFair" />
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='4' x:Name="barAge" />
-            <Image x:ConnectionId='5' x:Name="barIncome" />
-        </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='2' x:Name="barWait" />
-            <Image x:ConnectionId='3' x:Name="barFair" />
-        </StackPanel>
-        <ComboBox x:ConnectionId='1' x:Name="timeFrameCmb">
-            <ComboBoxItem>Last Day</ComboBoxItem>
-            <ComboBoxItem>Last Week</ComboBoxItem>
-            <ComboBoxItem>Last Month</ComboBoxItem>
-            <ComboBoxItem>Last Year</ComboBoxItem>
-            <ComboBoxItem>All</ComboBoxItem>
-        </ComboBox>
     </StackPanel>
 </Page>
 

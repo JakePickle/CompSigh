@@ -132,7 +132,7 @@ namespace Template.Template_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[12];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "Template.ScenarioBindingConverter";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Template.MainPage";
@@ -142,11 +142,14 @@ namespace Template.Template_XamlTypeInfo
             _typeNameTable[6] = "Template.Scenario";
             _typeNameTable[7] = "String";
             _typeNameTable[8] = "System.Type";
-            _typeNameTable[9] = "Template.Results";
-            _typeNameTable[10] = "Template.Scenario1";
-            _typeNameTable[11] = "Template.Welcome";
+            _typeNameTable[9] = "Template.OCRCapturedImage";
+            _typeNameTable[10] = "Template.OcrFileImage";
+            _typeNameTable[11] = "Template.Results";
+            _typeNameTable[12] = "Template.Results2";
+            _typeNameTable[13] = "Template.Scenario1";
+            _typeNameTable[14] = "Template.Welcome";
 
-            _typeTable = new global::System.Type[12];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::Template.ScenarioBindingConverter);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Template.MainPage);
@@ -156,9 +159,12 @@ namespace Template.Template_XamlTypeInfo
             _typeTable[6] = typeof(global::Template.Scenario);
             _typeTable[7] = typeof(global::System.String);
             _typeTable[8] = typeof(global::System.Type);
-            _typeTable[9] = typeof(global::Template.Results);
-            _typeTable[10] = typeof(global::Template.Scenario1);
-            _typeTable[11] = typeof(global::Template.Welcome);
+            _typeTable[9] = typeof(global::Template.OCRCapturedImage);
+            _typeTable[10] = typeof(global::Template.OcrFileImage);
+            _typeTable[11] = typeof(global::Template.Results);
+            _typeTable[12] = typeof(global::Template.Results2);
+            _typeTable[13] = typeof(global::Template.Scenario1);
+            _typeTable[14] = typeof(global::Template.Welcome);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -197,9 +203,12 @@ namespace Template.Template_XamlTypeInfo
         private object Activate_2_MainPage() { return new global::Template.MainPage(); }
         private object Activate_5_List() { return new global::System.Collections.Generic.List<global::Template.Scenario>(); }
         private object Activate_6_Scenario() { return new global::Template.Scenario(); }
-        private object Activate_9_Results() { return new global::Template.Results(); }
-        private object Activate_10_Scenario1() { return new global::Template.Scenario1(); }
-        private object Activate_11_Welcome() { return new global::Template.Welcome(); }
+        private object Activate_9_OCRCapturedImage() { return new global::Template.OCRCapturedImage(); }
+        private object Activate_10_OcrFileImage() { return new global::Template.OcrFileImage(); }
+        private object Activate_11_Results() { return new global::Template.Results(); }
+        private object Activate_12_Results2() { return new global::Template.Results2(); }
+        private object Activate_13_Scenario1() { return new global::Template.Scenario1(); }
+        private object Activate_14_Welcome() { return new global::Template.Welcome(); }
         private void VectorAdd_5_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Template.Scenario>)instance;
@@ -271,23 +280,44 @@ namespace Template.Template_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  Template.Results
+            case 9:   //  Template.OCRCapturedImage
                 userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Results;
+                userType.Activator = Activate_9_OCRCapturedImage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  Template.Scenario1
+            case 10:   //  Template.OcrFileImage
                 userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Scenario1;
+                userType.Activator = Activate_10_OcrFileImage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Template.Welcome
+            case 11:   //  Template.Results
                 userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_Welcome;
+                userType.Activator = Activate_11_Results;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  Template.Results2
+                userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_Results2;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Template.Scenario1
+                userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_Scenario1;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  Template.Welcome
+                userType = new global::Template.Template_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_14_Welcome;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

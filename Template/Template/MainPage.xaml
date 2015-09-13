@@ -41,7 +41,7 @@
             <SplitView.Pane>
                 <RelativePanel Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
                     <StackPanel x:Name="HeaderPanel" Orientation="Horizontal">
-                        <TextBlock x:Name="Header" Text="Court Feedback System" Style="{StaticResource TagLineTextStyle}" Margin="0,15,0,0" />
+                        <TextBlock x:Name="Header" Text="Court Connections" Style="{StaticResource TagLineTextStyle}" Margin="0,15,0,0" />
                     </StackPanel>
                     <TextBlock x:Name="SampleTitle" Text="Sample Title Here" Style="{StaticResource SampleHeaderTextStyle}" TextWrapping="Wrap" RelativePanel.Below="HeaderPanel" Margin="0,10,0,0"/>
                     <ListBox x:Name="ScenarioControl" SelectionChanged="ScenarioControl_SelectionChanged"

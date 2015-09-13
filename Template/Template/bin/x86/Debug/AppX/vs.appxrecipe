@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-13T03:12:44.840</Modified>
+      <Modified>2015-09-13T13:54:07.036</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -36,7 +36,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <Modified>2015-09-12T09:05:37.682</Modified>
+      <Modified>2015-09-13T11:52:01.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
@@ -64,11 +64,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\entrypoint\Template.exe">
       <PackagePath>entrypoint\Template.exe</PackagePath>
-      <Modified>2015-09-13T03:12:41.603</Modified>
+      <Modified>2015-09-13T13:54:06.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts.dll">
       <PackagePath>GoogleCharts.dll</PackagePath>
-      <Modified>2015-09-12T19:23:58.569</Modified>
+      <Modified>2015-09-13T07:11:45.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts\Properties\GoogleCharts.rd.xml">
       <PackagePath>GoogleCharts\Properties\GoogleCharts.rd.xml</PackagePath>
@@ -104,7 +104,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-13T03:12:44.419</Modified>
+      <Modified>2015-09-13T13:54:06.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\RestSharp.dll">
+      <PackagePath>RestSharp.dll</PackagePath>
+      <Modified>2015-09-13T09:52:37.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -504,11 +508,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.exe">
       <PackagePath>Template.exe</PackagePath>
-      <Modified>2015-09-13T03:12:44.838</Modified>
+      <Modified>2015-09-13T13:54:07.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.xr.xml">
       <PackagePath>Template.xr.xml</PackagePath>
-      <Modified>2015-09-12T23:26:37.089</Modified>
+      <Modified>2015-09-13T08:32:54.109</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Twilio.Api.dll">
+      <PackagePath>Twilio.Api.dll</PackagePath>
+      <Modified>2015-09-13T09:52:37.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
