@@ -10,7 +10,6 @@
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DatabaseAccess.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="testAlgorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DatabaseAccess.h" />

@@ -14,12 +14,13 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Template
 {
-    public enum GraphType
+    public enum StatType
     {
-        Line,
-        Pie,
-        Bar,
-        Dot
+        Age,
+        Ethnicity,
+        Income,
+        Wait,
+        Fairness
     }
 
     public sealed partial class Results : Page
@@ -29,24 +30,70 @@ namespace Template
         public Results()
         {
             this.InitializeComponent();
-            List<int[]> data = new List<int[]>();
-            createGraph("testPie.png", "Community Opinion of Judge as Percentages", 400, 200, new int[] { 25, 25, 25, 25 }, new string[] { "test1", "test2", "test3", "test4" });
-            data.Add(new int[] { 10, 0, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 5, 0, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 20, 0, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 15, 0, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 10, 0, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 5, 0 });
-            data.Add(new int[] { 0, 0, 0, 0, 0, 0, 12 });
-            createGraph("testBar.png", "Number of Ethnicities", 400, 200, data, new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Islander", "Native American", "Other" }, BarChartOrientation.Vertical);
-            data=new List<int[]>();
-            data.Add(new int[] {0,15,30,45,60 });
-            data.Add(new int[] { 10, 50, 15, 60, 12});
-            createGraph("testScatter.png", "Age Vs. Wait Time", 400, 200, data, new string[] { "" },1);
-            //createPie();
+            doTheGraphs();
         }
 
-        public async void createGraph(string fileName, string title, int width, int height, int[] data, string[] labels)
+        public async void doTheGraphs()
+        {
+            DoData doData = new DoData();
+            doData.doAges();
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            doData.doEthnic();
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            doData.doIncome();
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            doData.doWait();
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            doData.doFairness();
+            List<int[]> data = new List<int[]>();
+            createPiGraph("FairPie.png", "Community Opinion of Judge", 400, 200, doData.getFair(), new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, StatType.Fairness);
+            createPiGraph("EthnicPie.png", "Ethnic Diversity in Courts", 400, 200, doData.getEthnic(), new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Island", "Native American", "Other", "Prefer not to respond" }, StatType.Ethnicity);
+            createPiGraph("IncomePie.png", "Income Diversity in Courts", 400, 200, doData.getIncome(), new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, StatType.Income);
+            createPiGraph("WaitPie.png", "Wait Time in Courts", 400, 200, doData.getWait(), new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, StatType.Wait);
+            createPiGraph("AgePie.png", "Age Diversity in Courts", 400, 200, doData.getWait(), new string[] { "Under 18", "18-25", "26-35", "36-45", "46-55", "56-65", "Over 65", "Prefer not to respond" }, StatType.Age);
+            await Task.Delay(TimeSpan.FromSeconds(30));
+            data.Add(new int[] { doData.getEthnic()[0], 0, 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, doData.getEthnic()[1], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, doData.getEthnic()[2], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, doData.getEthnic()[3], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, doData.getEthnic()[4], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getEthnic()[5], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getEthnic()[6] });
+            createBarGraph("EthnicBar.png", "Number of Ethnicities", 400, 200, data, new string[] { "White", "African American", "Asian", "Hispanic", "Pacific Islander", "Native American", "Other" }, BarChartOrientation.Vertical, StatType.Ethnicity);
+            data = new List<int[]>();
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            data.Add(new int[] { doData.getFair()[0], 0, 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, doData.getFair()[1], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, doData.getFair()[2], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, doData.getFair()[3], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, doData.getFair()[4], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getFair()[5], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getFair()[6] });
+            createBarGraph("FairnessBar.png", "Opinions of Judge", 400, 200, data, new string[] { "Completely Unfair", "Unfair", "Neutral", "Fair", "Completely Fair", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Fairness);
+            data = new List<int[]>();
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            data.Add(new int[] { doData.getIncome()[0], 0, 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, doData.getIncome()[1], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, doData.getIncome()[2], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, doData.getIncome()[3], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, doData.getIncome()[4], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getIncome()[5], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getIncome()[6] });
+            createBarGraph("IncomeBar.png", "Different Incomes in the Court", 400, 200, data, new string[] { "Under $25,000", "$25,001-49,999", "$50,000-74,999", "$75,000-100,000", "Over $100,000", "Prefer Not to Respond" }, BarChartOrientation.Vertical, StatType.Income);
+            data = new List<int[]>();
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            data.Add(new int[] { doData.getWait()[0], 0, 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, doData.getWait()[1], 0, 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, doData.getWait()[2], 0, 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, doData.getWait()[3], 0, 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, doData.getWait()[4], 0, 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, doData.getWait()[5], 0 });
+            data.Add(new int[] { 0, 0, 0, 0, 0, 0, doData.getWait()[6] });
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            createBarGraph("WaitBar.png", "Wait times in Court", 400, 200, data, new string[] { "Less than 15 min", "16-45 min", "46 min-1 hr", "1hr-2hr", "Greater than 2 hr", "Prefer not to respond" }, BarChartOrientation.Vertical, StatType.Wait);
+            data = new List<int[]>();
+        }
+        public async void createPiGraph(string fileName, string title, int width, int height, int[] data, string[] labels, StatType type)
         {
             StorageFolder folder = KnownFolders.PicturesLibrary;
             StorageFile file = await folder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
@@ -75,7 +122,27 @@ namespace Template
                 bitmapImage.DecodePixelWidth = width; //match the target Image.Width, not shown
                 bitmapImage.DecodePixelHeight = height;
                 await bitmapImage.SetSourceAsync(fileStream);
-                pieImg.Source = bitmapImage;
+                if(type==StatType.Age)
+                {
+                    pieAge.Source = bitmapImage;
+                }
+                else if(type==StatType.Ethnicity)
+                {
+                    pieEthnic.Source = bitmapImage;
+                }
+                else if(type==StatType.Fairness)
+                {
+                    pieFair.Source = bitmapImage;
+                }
+                else if(type==StatType.Income)
+                {
+                    pieIncome.Source = bitmapImage;
+                }
+                else
+                {
+                    pieWait.Source = bitmapImage;
+                }
+                //pieImg.Source = bitmapImage;
             }
         }
 
@@ -110,7 +177,7 @@ namespace Template
                 bitmapImage.DecodePixelWidth = width; //match the target Image.Width, not shown
                 bitmapImage.DecodePixelHeight = height;
                 await bitmapImage.SetSourceAsync(fileStream);
-                scatterImg.Source = bitmapImage;
+                //scatterImg.Source = bitmapImage;
             }
         }
 
@@ -145,11 +212,11 @@ namespace Template
                 bitmapImage.DecodePixelWidth = width; //match the target Image.Width, not shown
                 bitmapImage.DecodePixelHeight = height;
                 await bitmapImage.SetSourceAsync(fileStream);
-                scatterImg.Source = bitmapImage;
+                //scatterImg.Source = bitmapImage;
             }
         }
 
-        public async void createGraph(string fileName, string title, int width, int height, List<int[]> data, string[] labels, BarChartOrientation overload)
+        public async void createBarGraph(string fileName, string title, int width, int height, List<int[]> data, string[] labels, BarChartOrientation overload, StatType type)
         {
             StorageFolder folder = KnownFolders.PicturesLibrary;
             StorageFile file = await folder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
@@ -180,7 +247,27 @@ namespace Template
                 bitmapImage.DecodePixelWidth = width; //match the target Image.Width, not shown
                 bitmapImage.DecodePixelHeight = height;
                 await bitmapImage.SetSourceAsync(fileStream);
-                barImg.Source = bitmapImage;
+                if (type == StatType.Age)
+                {
+                    barAge.Source = bitmapImage;
+                }
+                else if (type == StatType.Ethnicity)
+                {
+                    barEthnic.Source = bitmapImage;
+                }
+                else if (type == StatType.Fairness)
+                {
+                    barFair.Source = bitmapImage;
+                }
+                else if (type == StatType.Income)
+                {
+                    barIncome.Source = bitmapImage;
+                }
+                else
+                {
+                    barWait.Source = bitmapImage;
+                }
+                //barImg.Source = bitmapImage;
             }
         }
     }

@@ -10,12 +10,32 @@
     <StackPanel>
         <TextBlock HorizontalAlignment="Center" FontSize="35">Thank You! Here are some overall results: </TextBlock>
         <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='2' x:Name="pieImg" />
-            <Image x:ConnectionId='3' x:Name="barImg" />
+            <Image x:ConnectionId='10' x:Name="pieAge" />
+            <Image x:ConnectionId='11' x:Name="pieEthnic" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Image x:ConnectionId='1' x:Name="scatterImg" />
+            <Image x:ConnectionId='8' x:Name="pieIncome" />
+            <Image x:ConnectionId='9' x:Name="pieWait" />
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:ConnectionId='6' x:Name="pieFair" />
+            <Image x:ConnectionId='7' x:Name="barEthnic" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:ConnectionId='4' x:Name="barAge" />
+            <Image x:ConnectionId='5' x:Name="barIncome" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:ConnectionId='2' x:Name="barWait" />
+            <Image x:ConnectionId='3' x:Name="barFair" />
+        </StackPanel>
+        <ComboBox x:ConnectionId='1' x:Name="timeFrameCmb">
+            <ComboBoxItem>Last Day</ComboBoxItem>
+            <ComboBoxItem>Last Week</ComboBoxItem>
+            <ComboBoxItem>Last Month</ComboBoxItem>
+            <ComboBoxItem>Last Year</ComboBoxItem>
+            <ComboBoxItem>All</ComboBoxItem>
+        </ComboBox>
     </StackPanel>
 </Page>
 

@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-09-12T20:44:48.207</Modified>
+      <Modified>2015-09-13T00:49:08.324</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\entrypoint\Template.exe">
       <PackagePath>entrypoint\Template.exe</PackagePath>
-      <Modified>2015-09-12T20:03:08.657</Modified>
+      <Modified>2015-09-13T00:49:07.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\GoogleCharts.dll">
       <PackagePath>GoogleCharts.dll</PackagePath>
@@ -104,7 +104,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-09-12T20:44:47.391</Modified>
+      <Modified>2015-09-13T00:49:07.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -504,11 +504,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.exe">
       <PackagePath>Template.exe</PackagePath>
-      <Modified>2015-09-12T20:44:48.201</Modified>
+      <Modified>2015-09-13T00:49:08.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\Template.xr.xml">
       <PackagePath>Template.xr.xml</PackagePath>
-      <Modified>2015-09-12T12:30:22.865</Modified>
+      <Modified>2015-09-12T23:26:37.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Seth\Documents\GitHub\CompSigh\Template\Template\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>

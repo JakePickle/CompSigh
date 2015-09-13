@@ -10,11 +10,31 @@
     <StackPanel>
         <TextBlock HorizontalAlignment="Center" FontSize="35">Thank You! Here are some overall results: </TextBlock>
         <StackPanel Orientation="Horizontal">
-            <Image x:Name="pieImg" />
-            <Image x:Name="barImg" />
+            <Image x:Name="pieAge" />
+            <Image x:Name="pieEthnic" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <Image x:Name="scatterImg" />
+            <Image x:Name="pieIncome" />
+            <Image x:Name="pieWait" />
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="pieFair" />
+            <Image x:Name="barEthnic" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="barAge" />
+            <Image x:Name="barIncome" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="barWait" />
+            <Image x:Name="barFair" />
+        </StackPanel>
+        <ComboBox x:Name="timeFrameCmb">
+            <ComboBoxItem>Last Day</ComboBoxItem>
+            <ComboBoxItem>Last Week</ComboBoxItem>
+            <ComboBoxItem>Last Month</ComboBoxItem>
+            <ComboBoxItem>Last Year</ComboBoxItem>
+            <ComboBoxItem>All</ComboBoxItem>
+        </ComboBox>
     </StackPanel>
 </Page>
